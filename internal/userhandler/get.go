@@ -31,5 +31,5 @@ func Get(w http.ResponseWriter, r *http.Request) {
 	}
 
 	log.Println("done")
-	api.JsonReply(w, http.StatusNotFound, user)
+	api.JsonReply(w, http.StatusNotFound, []core.User{user})
 }
